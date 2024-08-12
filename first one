@@ -1,0 +1,10 @@
+  var somediv = document.getElementById('somediv');
+        //透明度：opacity:取值范围0-1
+        var opacity = 1;
+        var fade = setInterval(function(){
+            opacity -=0.05
+            somediv.style.opacity = opacity
+            if(opacity<0){
+                clearInterval(fade)
+            }
+        },500);
